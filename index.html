@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="kaloutput.css" />
+    <title>Document</title>
+  </head>
+  <body class="flex justify-center items-center bg-gray-100 min-h-screen">
+    <div class="m-7 w-80[1000px] font-semibold bg-gray-200 p-3 rounded-lg">
+      <form action="">
+        <div class="flex justify-end items-center w-full h-24">
+          <input
+            type="text"
+            class="text-2xl bg-slate-900 w-full text-right text-black"
+            id="js-cal-display"
+            placeholder="calculator"
+          />
+        </div>
+        <div class="grid grid-cols-4 grid-rows-5 gap-2 my-2">
+          <input
+            type="button"
+            class="flex justify-center items-center p-3 bg-gray-500 rounded-full"
+            onclick="clickAC()"
+            value="AC"
+          />
+          <input
+            type="button"
+            class="flex justify-center items-center p-3 bg-gray-500 rounded-full"
+            value="DE"
+            onclick="delNum()"
+          />
+
+          <input
+            type="button"
+            value="%"
+            onclick="clickValue('%')"
+            class="flex justify-center items-center p-3 bg-gray-500 rounded-full"
+          />
+          <input
+            type="button"
+            value=":"
+            onclick="clickValue('/')"
+            class="flex justify-center items-center p-3 bg-orange-600 rounded-full"
+          />
+          <input
+            type="button"
+            value="1"
+            onclick="clickValue('1')"
+            class="flex justify-center items-center p-3 bg-black text-white rounded-full"
+          />
+          <input
+            type="button"
+            value="2"
+            onclick="clickValue('2')"
+            class="flex justify-center items-center p-3 bg-black text-white rounded-full"
+          />
+
+          <input
+            type="button"
+            value="3"
+            onclick="clickValue('3')"
+            class="flex justify-center items-center p-3 bg-black text-white rounded-full"
+          />
+
+          <input
+            type="button"
+            value="x"
+            onclick="clickValue('*')"
+            class="flex justify-center items-center p-3 bg-orange-600 rounded-full"
+          />
+
+          <input
+            type="button"
+            value="4"
+            onclick="clickValue('4')"
+            class="flex justify-center items-center p-3 bg-black text-white rounded-full"
+          />
+          <input
+            type="button"
+            value="5"
+            onclick="clickValue('5')"
+            class="flex justify-center items-center p-3 bg-black text-white rounded-full"
+          />
+
+          <input
+            type="button"
+            value="6"
+            onclick="clickValue('6')"
+            class="flex justify-center items-center p-3 bg-black text-white rounded-full"
+          />
+
+          <input
+            type="button"
+            value="-"
+            onclick="clickValue('-')"
+            class="flex justify-center items-center p-3 bg-orange-600 rounded-full"
+          />
+
+          <input
+            type="button"
+            value="7"
+            onclick="clickValue('7')"
+            class="flex justify-center items-center p-3 bg-black text-white rounded-full"
+          />
+
+          <input
+            type="button"
+            value="8"
+            onclick="clickValue('8')"
+            class="flex justify-center items-center p-3 bg-black text-white rounded-full"
+          />
+
+          <input
+            value="9"
+            type="button"
+            onclick="clickValue('9')"
+            class="flex justify-center items-center p-3 bg-black text-white rounded-full"
+          />
+
+          <input
+            type="button"
+            value="+"
+            onclick="clickValue('+')"
+            class="flex justify-center items-center p-3 bg-orange-600 rounded-full"
+          />
+
+          <input
+            type="button"
+            value="0"
+            onclick="clickValue('0')"
+            class="col-span-2 flex justify-start items-center p-3 bg-black text-white rounded-full"
+          />
+
+          <input
+            type="button"
+            value="."
+            onclick="clickValue('.')"
+            class="flex justify-center items-center p-3 bg-black text-white rounded-full"
+          />
+
+          <input
+            type="button"
+            value="="
+            onclick="calculation()"
+            class="flex justify-center items-center p-3 bg-orange-600 rounded-full"
+          />
+        </div>
+      </form>
+    </div>
+
+    <script src="kalkulator.js"></script>
+  </body>
+</html>
